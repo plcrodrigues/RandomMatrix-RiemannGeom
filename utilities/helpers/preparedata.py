@@ -30,7 +30,6 @@ def _slice_data(raw, tparams, events_interest):
     epochs = mne.Epochs(raw, events, events_interest, tmin, tmax,
                                  proj=True,
                                  picks=picks,
-                                 add_eeg_ref=False,
                                  baseline=None,
                                  preload=True,
                                  verbose=False)    
